@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <div className= "sidebar">
         
-        <XIcon/>
+        <XIcon />
     </div>
   )
 }
