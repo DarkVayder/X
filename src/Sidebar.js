@@ -10,6 +10,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import ListIcon from '@mui/icons-material/List';
 import PersonIcon from '@mui/icons-material/Person';
 import MoreIcon from '@mui/icons-material/More';
+import { Button } from '@mui/material';
 function Sidebar() {
   return (
     <div className= "sidebar">
@@ -25,7 +26,7 @@ function Sidebar() {
         <SidebarOption Icon={PersonIcon} text="Profile"/>
         <SidebarOption Icon={MoreIcon} text="More"/>
         
-
+    <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
     </div>
   )
 }
