@@ -10,6 +10,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import ListIcon from '@mui/icons-material/List';
 import PersonIcon from '@mui/icons-material/Person';
 import MoreIcon from '@mui/icons-material/More';
+import GroupsIcon from '@mui/icons-material/Groups';
 import { Button } from '@mui/material';
 function Sidebar() {
   return (
@@ -23,10 +24,12 @@ function Sidebar() {
         <SidebarOption Icon={EmailIcon} text="Messages"/>
         <SidebarOption Icon={BookmarkIcon} text="Bookmarks"/>
         <SidebarOption Icon={ListIcon} text="Lists"/>
+        <SidebarOption Icon={GroupsIcon} text="Communities"/>
+        <SidebarOption Icon={XIcon} text="Premium"/>
         <SidebarOption Icon={PersonIcon} text="Profile"/>
         <SidebarOption Icon={MoreIcon} text="More"/>
         
-    <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
+    <Button variant="outlined" className="sidebar__tweet" fullWidth>Post</Button>
     </div>
   )
 }

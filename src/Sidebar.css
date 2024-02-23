@@ -21,4 +21,6 @@
 .sidebar__xicon{
     color: var(--x-color) !important;
     font-size: 30px !important;
+    margin-left: 20px;
+    margin-right: 20px;
 }
