@@ -16,7 +16,7 @@ function Sidebar() {
         
         <XIcon />
 
-        <SidebarOption Icon={HomeIcon} text="Home"/>
+        <SidebarOption active Icon={HomeIcon} text="Home"/>
         <SidebarOption Icon={ExploreIcon} text="Explore"/>
         <SidebarOption Icon={NotificationsIcon} text="Notification" />
         <SidebarOption Icon={EmailIcon} text="Email"/>
