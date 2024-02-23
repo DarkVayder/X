@@ -15,7 +15,7 @@ function Sidebar() {
   return (
     <div className= "sidebar">
         
-        <XIcon />
+        <XIcon className='sidebar__xicon'/>
 
         <SidebarOption active Icon={HomeIcon} text="Home"/>
         <SidebarOption Icon={ExploreIcon} text="Explore"/>
