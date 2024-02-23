@@ -19,8 +19,8 @@ function Sidebar() {
         <SidebarOption active Icon={HomeIcon} text="Home"/>
         <SidebarOption Icon={ExploreIcon} text="Explore"/>
         <SidebarOption Icon={NotificationsIcon} text="Notification" />
-        <SidebarOption Icon={EmailIcon} text="Email"/>
-        <SidebarOption Icon={BookmarkIcon} text="Bookmark"/>
+        <SidebarOption Icon={EmailIcon} text="Messages"/>
+        <SidebarOption Icon={BookmarkIcon} text="Bookmarks"/>
         <SidebarOption Icon={ListIcon} text="Lists"/>
         <SidebarOption Icon={PersonIcon} text="Profile"/>
         <SidebarOption Icon={MoreIcon} text="More"/>
