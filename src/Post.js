@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "./Avatar.jpg";
 import "./Post.css";
-import VerifiedUserIcon from "@material-ui/icons/VerifiedUser"; 
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 
 function Post({
   displayName,
@@ -20,18 +20,16 @@ function Post({
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              DarkVayder{" "}
-              <span>
-                <VerifiedUserIcon className="post__badge"/>
-              </span>
+              {displayName} 
+              {verified && <span><VerifiedUserIcon className="post__badge"/></span>} 
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>X Demo</p>
+            <p>{username} Abzi</p>
           </div>
         </div>
-        <img 
-          src=" ", alt=" " />
+        {image && <img src={avatar} alt="Posted Image" />} 
+        <p>{text}</p>
       </div>
     </div>
   );
