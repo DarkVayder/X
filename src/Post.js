@@ -1,5 +1,7 @@
 import React from "react";
-import Avatar from "./Avatar.jpg";
+import { Avatar } from '@mui/material';
+import userAvatar from './Avatar.jpg';
+import userImage from './image.jpg';
 import "./Post.css";
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
@@ -9,12 +11,11 @@ function Post({
   verified,
   text,
   image,
-  avatar,
 }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src={avatar} alt="User Avatar" />
+        <Avatar src={userAvatar} alt="User Avatar" />
       </div>
       <div className="post__body">
         <div className="post__header">
@@ -28,8 +29,8 @@ function Post({
             <p>{username} John Doe</p>
           </div>
         </div>
-          {image && <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fcoil-kt%2Fcoil%2Fissues%2F540&psig=AOvVaw2hsQxdBoeABf5j1I67Z2Hl&ust=1710593173761000&source=images&cd=vfe&opi=89978449&ved=0CBMQjhxqFwoTCPj047yR94QDFQAAAAAdAAAAABAE" alt="posted content"/>}
-        <p>{text}</p>
+        {image && <img src={userImage} alt="Posted Content"/>}
+        <p>{text} My First Post </p>
       </div>
     </div>
   );
