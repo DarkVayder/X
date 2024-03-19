@@ -3,7 +3,7 @@ import "./App.css";
 import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Widgets from "./Widgets";
-import DarkModeToggle from "./DarkModeToggle"; // Corrected import
+import DarkModeToggle from "./DarkModeToggle"; 
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
