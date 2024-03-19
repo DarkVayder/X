@@ -3,12 +3,14 @@ import { Avatar } from '@mui/material';
 import userAvatar from './Avatar.jpg';
 import "./Post.css";
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import userImage from './image.jpg';
 
 function Post({
   displayName,
   username,
   verified,
   text,
+  image,
   }) {
   return (
     <div className="post">
@@ -28,6 +30,7 @@ function Post({
           </div> 
         </div>
         <p>{text} My First Post </p>
+        <img src={userImage} alt="Posted Content"/>
       </div>
     </div>
   );
