@@ -1,9 +1,10 @@
 import React from "react";
+import "./DarkModeToggle.css";
 
 function DarkModeToggle({ darkMode, toggleDarkMode }) {
   return (
-    <button onClick={toggleDarkMode}>
-      {darkMode ? 'Light Mode' : 'Dark Mode'}
+    <button className="dark-mode-toggle" onClick={toggleDarkMode}>
+      {darkMode ? "☀️" : "🌙"}
     </button>
   );
 }

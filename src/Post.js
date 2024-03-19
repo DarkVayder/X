@@ -1,7 +1,6 @@
 import React from "react";
 import { Avatar } from '@mui/material';
 import userAvatar from './Avatar.jpg';
-import userImage from './image.jpg';
 import "./Post.css";
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
@@ -10,8 +9,7 @@ function Post({
   username,
   verified,
   text,
-  image,
-}) {
+  }) {
   return (
     <div className="post">
       <div className="post__avatar">
@@ -30,7 +28,6 @@ function Post({
           </div> 
         </div>
         <p>{text} My First Post </p>
-        <img src={userImage} alt="Posted Content"/>
       </div>
     </div>
   );
