@@ -27,10 +27,10 @@ function Post({
           </div>
           <div className="post__headerDescription">
             <p>{username} John Doe</p>
-          </div>
+          </div> 
         </div>
-        {image && <img src={userImage} alt="Posted Content"/>}
         <p>{text} My First Post </p>
+        <img src={userImage} alt="Posted Content"/>
       </div>
     </div>
   );
