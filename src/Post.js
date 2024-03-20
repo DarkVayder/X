@@ -9,12 +9,9 @@ import RepeatIcon from '@mui/icons-material/Repeat';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PublishIcon from '@mui/icons-material/Publish';
 
-function Post({
-  displayName,
-  username,
-  verified,
-  text,
+function Post({ displayName, username, verified, text,
   }) {
+    
   return (
     <div className="post">
       <div className="post__avatar">
