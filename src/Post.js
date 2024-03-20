@@ -4,10 +4,10 @@ import userAvatar from './Avatar.jpg';
 import "./Post.css";
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import userImage from './image.jpg';
-import { ChatBubbleOutlineOutlined } from "@mui/icons-material";
-import RepeatIcon from "@mui/icons-material";
-import FavoriteBorderIcon from "@mui/icons-material";
-import PublishIcon from "@mui/icons-material";
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import RepeatIcon from '@mui/icons-material/Repeat';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import PublishIcon from '@mui/icons-material/Publish';
 
 function Post({
   displayName,
@@ -38,7 +38,7 @@ function Post({
         <p>{text} </p>
         <img src={userImage} alt="Posted Content"/>
         <div className="post__footer">
-          <ChatBubbleOutlineOutlined fontSize="small" />
+          <ChatBubbleIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
           <FavoriteBorderIcon fontSize="small" />
           <PublishIcon fontSize="small" />
