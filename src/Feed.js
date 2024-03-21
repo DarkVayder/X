@@ -1,31 +1,34 @@
-import React from 'react'
-import './Feed.css'
-import TweetBox from './TweetBox'
-import Post from './Post'
+import React, { useState } from 'react';
+import './Feed.css';
+import TweetBox from './TweetBox';
+import Post from './Post';
+import userAvatar from './Avatar.jpg';
+import userImage from './image.jpg';
 
 function Feed() {
   return (
     <div className='feed'>
-        <div className='feed__header'>
-            <h2>My Feed</h2>
-        </div>
+      <div className='feed__header'>
+        <h2>My Feed</h2>
+      </div>
 
-        <TweetBox />
+      <TweetBox />
 
-        
-        <Post/>
+      <Post
+        displayName="DarkVayder"
+        username="Jay"
+        verified={true}
+        text="here we go!!"
+        avatar={userAvatar} 
+        userImage={userImage} 
+      />
 
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
-  
-  )
+  );
 }
 
-export default Feed
+export default Feed;

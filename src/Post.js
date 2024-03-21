@@ -21,19 +21,17 @@ function Post({ displayName, username, verified, text,
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              {displayName} 
-              John Doe {" "}
+              {displayName} {" "}
               {verified && <span>
-                <VerifiedUserIcon className="post__badge"/>
+                {verified && <VerifiedUserIcon className="post__badge"/>} @{username}
               </span>} 
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>{username} My First  X Clone Post </p>
+            <p>{text}</p>
           </div> 
         </div>
-        <p>{text} </p>
-        <img src={userImage} alt="Posted Content"/>
+        <img src={userImage} alt=""/>
         <div className="post__footer">
           <ChatBubbleIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
