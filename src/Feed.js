@@ -4,14 +4,14 @@ import TweetBox from './TweetBox';
 import Post from './Post';
 import userAvatar from './Avatar.jpg';
 import userImage from './image.jpg';
-import userImage2 from './coldpalmer.jpeg';
+import userImage2 from './cole palmer.jpeg';
 import userAvatar2 from './avatar2.jpg';
 
 function Feed() {
   return (
     <div className='feed'>
       <div className='feed__header'>
-        <h2>My Feed</h2>
+        <h2>For you</h2>
       </div>
 
       <TweetBox />
@@ -20,7 +20,7 @@ function Feed() {
         displayName="DarkVayder"
         username="Jay"
         verified={true}
-        text="Lets go!!!"
+        text="COLD PALMER...!!!"
         avatar={userAvatar2} 
         userImage={userImage2} 
       />
@@ -29,7 +29,7 @@ function Feed() {
         displayName="Endeavor"
         username="Jay"
         verified={false}
-        text="World class 'COLD PALMER'...!!!"
+        text="Acuna Matata"
         avatar={userAvatar}
         userImage={userImage} 
       />
