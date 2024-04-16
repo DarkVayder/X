@@ -4,6 +4,8 @@ import TweetBox from './TweetBox';
 import Post from './Post';
 import userAvatar from './Avatar.jpg';
 import userImage from './image.jpg';
+import userImage2 from './coldpalmer.jpeg';
+import userAvatar2 from './avatar2.jpg';
 
 function Feed() {
   return (
@@ -19,16 +21,17 @@ function Feed() {
         username="Jay"
         verified={true}
         text="Lets go!!!"
-        avatar={userAvatar} 
-        userImage={userImage} 
+        avatar={userAvatar2} 
+        userImage={userImage2} 
       />
 
       <Post
-        displayName="DarkVayder"
+        displayName="Endeavor"
         username="Jay"
         verified={false}
         text="World class 'COLD PALMER'...!!!"
-        avatar={userAvatar} 
+        avatar={userAvatar}
+        userImage={userImage} 
       />
     </div>
   );
