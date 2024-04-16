@@ -18,11 +18,18 @@ function Feed() {
         displayName="DarkVayder"
         username="Jay"
         verified={true}
-        text="here we go!!"
+        text="Lets go!!!"
         avatar={userAvatar} 
         userImage={userImage} 
       />
 
+      <Post
+        displayName="DarkVayder"
+        username="Jay"
+        verified={false}
+        text="World class 'COLD PALMER'...!!!"
+        avatar={userAvatar} 
+      />
     </div>
   );
 }
