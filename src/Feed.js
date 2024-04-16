@@ -4,7 +4,7 @@ import TweetBox from './TweetBox';
 import Post from './Post';
 import userAvatar2 from './Avatar.jpg';
 import userImage2 from './image.jpg';
-import userImage from './cole palmer.jpeg';
+import userImage from './image2.jpeg';
 import userAvatar from './avatar2.jpg';
 
 function Feed() {
