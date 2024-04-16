@@ -2,10 +2,10 @@ import React from 'react';
 import './Feed.css';
 import TweetBox from './TweetBox';
 import Post from './Post';
-import userAvatar from './Avatar.jpg';
-import userImage from './image.jpg';
-import userImage2 from './cole palmer.jpeg';
-import userAvatar2 from './avatar2.jpg';
+import userAvatar2 from './Avatar.jpg';
+import userImage2 from './image.jpg';
+import userImage from './cole palmer.jpeg';
+import userAvatar from './avatar2.jpg';
 
 function Feed() {
   return (
@@ -21,8 +21,8 @@ function Feed() {
         username="Jay"
         verified={true}
         text="COLD PALMER...!!!"
-        avatar={userAvatar2} 
-        userImage={userImage2} 
+        avatar={userAvatar} 
+        userImage={userImage} 
       />
 
       <Post
@@ -30,8 +30,8 @@ function Feed() {
         username="Jay"
         verified={false}
         text="Acuna Matata"
-        avatar={userAvatar}
-        userImage={userImage} 
+        avatar={userAvatar2}
+        userImage={userImage2} 
       />
     </div>
   );

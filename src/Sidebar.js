@@ -12,9 +12,10 @@ import PersonIcon from '@mui/icons-material/Person';
 import MoreIcon from '@mui/icons-material/More';
 import GroupsIcon from '@mui/icons-material/Groups';
 import { Button } from '@mui/material';
+
 function Sidebar() {
   return (
-    <div className= "sidebar">
+    <div className="sidebar">
         
         <XIcon className='sidebar__xicon'/>
 
@@ -29,9 +30,10 @@ function Sidebar() {
         <SidebarOption Icon={PersonIcon} text="Profile"/>
         <SidebarOption Icon={MoreIcon} text="More"/>
         
-    <Button variant="outlined" className="sidebar__tweet" fullWidth>Post</Button>
+        <Button variant="outlined" className="sidebar__tweet" fullWidth>Post</Button>
+       
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

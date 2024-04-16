@@ -34,3 +34,10 @@
     font-weight: 800;
     font-family: sans-serif;
 }
+
+@media (max-width: 768px) {
+    .widgets {
+      display: none;
+    }
+  }
+  

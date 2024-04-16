@@ -24,3 +24,9 @@
 .sidebarOption--active {
     color: var(--x-color);
 }
+
+@media (max-width: 768px) {
+    .sidebarOption__text {
+      display: none;
+    }
+  }
