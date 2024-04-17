@@ -17,21 +17,21 @@ function Feed() {
       <TweetBox />
 
       <Post
-        displayName="DarkVayder"
-        username="Jay"
-        verified={true}
-        text="COLD PALMER...!!!"
-        avatar={userAvatar} 
-        userImage={userImage} 
+      displayName="DarkVayder"
+      username="Jay"
+      verified={true}
+      text="COLD PALMER...!!!"
+      avatar={userAvatar2}
+      userImage={userImage2} 
       />
 
       <Post
-        displayName="Endeavor"
-        username="Jay"
-        verified={false}
-        text="Acuna Matata"
-        avatar={userAvatar2}
-        userImage={userImage2} 
+      displayName="Endeavor"
+      username="Jay"
+      verified={false}
+      text="Acuna Matata"
+      avatar={userAvatar}
+      userImage={userImage} 
       />
     </div>
   );
