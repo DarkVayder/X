@@ -3,37 +3,53 @@
     border-right: 1px solid var(--x-color);
     min-width: fit-content;
     overflow-y: scroll;
-}
-
-.feed::-webkit-scrollbar {
+    min-height: 100vh;
+    padding-bottom: 10px;
+  }
+  
+  .feed::-webkit-scrollbar {
     display: none;
-}
-
-.feed {
+  }
+  
+  .feed {
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-.feed__header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 100;
+  }
+  
+  .feed__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid var(--x-color);
     padding: 15px 20px;
-}
-
-.feed__header > h2 {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--twitter-background);
+  }
+  
+  .feed__header > h2 {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
     color: var(--x-color);
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .feed {
       flex: 1;
-      min-width: 0; 
-      max-width: 100%; 
+      min-width: 0;
+      max-width: 100%;
     }
   }
+  
+  .app.dark-mode .feed__header {
+    background-color: #121212;
+    color: #ffffff;
+    border-color: #37474f; 
+  }
+  
+  .app.dark-mode .feed__header > h2 {
+    color: #ffffff;
+  }
+  
