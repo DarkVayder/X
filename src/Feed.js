@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Feed.css';
 import TweetBox from './TweetBox';
 import Post from './Post';
-import userAvatar2 from './Avatar.jpg'; // DarkVayder's avatar
-import userImage2 from './image.jpg';    // DarkVayder's image
-import userImage from './image2.jpeg';   // Endeavor's image
-import userAvatar from './avatar2.jpg';  // Endeavor's avatar
+import userAvatar2 from './Avatar.jpg'; 
+import userImage2 from './image.jpg';    
+import userImage from './image2.jpeg';   
+import userAvatar from './avatar2.jpg';  
+import { db, collection, onSnapshot } from './firebase';
 
 function Feed() {
-  console.log('userAvatar2:', userAvatar2);
-  console.log('userAvatar:', userAvatar);
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, 'Post'), snapshot => {
+      setPosts(snapshot.docs.map(doc => doc.data()));
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   return (
     <div className='feed'>
@@ -19,23 +27,18 @@ function Feed() {
 
       <TweetBox />
 
-      <Post
-        displayName="DarkVayder"
-        username="Jay"
-        verified={true}
-        text="Acuna Matata...!!!"
-        avatar={userAvatar2}
-        userImage={userImage2}
-      />
+      {posts.map((post, index) => (
+        <Post
+          key={index}
+          displayName={post.displayName}
+          username={post.username}
+          verified={post.verified}
+          text={post.text}
+          avatar={post.avatar}
+          userImage={post.userImage}
+        />
+      ))}
 
-      <Post
-        displayName="Endeavor"
-        username="Jay"
-        verified={false}
-        text="Acuna Matata"
-        avatar={userAvatar}
-        userImage={userImage}
-      />
     </div>
   );
 }
