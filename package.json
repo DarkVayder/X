@@ -1,5 +1,4 @@
 {
-  "homepage": "https://DarkVayder.github.io/X",
   "name": "X",
   "version": "0.1.0",
   "private": true,
@@ -21,11 +20,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build public", 
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "vercel --prod" 
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "vercel": "^23.1.0" 
   }
 }
